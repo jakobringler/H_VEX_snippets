@@ -1,0 +1,5 @@
+{
+    "label": "Orientation_Template_for_Copy",
+    "context": "Points",
+    "data": "@up = {0,1,0};\n@orient = quaternion(maketransform(@N,@up));\nvector4 rot_Y = quaternion(radians(ch(\\'Y\\')),{0,1,0});\n@orient = qmultiply(@orient, rot_Y);"
+}

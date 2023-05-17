@@ -1,0 +1,5 @@
+{
+    "label": "Remove_Point_Percentage_(ID_aware)",
+    "context": "Points",
+    "data": "int percentage = ch(\\'percentage\\'); \n\nif(@ptnum % 100 < percentage)\n{\n\tremovepoint(0, @ptnum );\n}"
+}

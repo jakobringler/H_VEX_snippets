@@ -1,0 +1,5 @@
+{
+    "label": "Remove_Point_by_Condition",
+    "context": "Points",
+    "data": "float half_cone_rad = radians(chf(\"half_cone\"));\n@group_to_delete = acos(dot(@P, {0,0,1})) <= half_cone_rad;"
+}

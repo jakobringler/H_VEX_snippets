@@ -1,0 +1,5 @@
+{
+    "label": "Helix_from_Line",
+    "context": "Points",
+    "data": "  float freq = chf(\"freq\");\n  float amp = chf(\"amp\");\n  vector pos = @P;\n  \n  pos.x += sin(@P.y * freq) * amp;\n  pos.z += cos(@P.y * freq) * amp;\n  @P = pos;"
+}

@@ -1,0 +1,5 @@
+{
+    "label": "Attribute_Min_Max",
+    "context": "Points",
+    "data": "float value;\nfloat values[];\nstring attrname = \"name\";\nfloat max_value;\nfloat min_value;\n\nfor (int i=0; i<@numpt; i++)\n{\n\tvalue = point(geoself(), attrname, i);\n\tappend(values,value);\n}\n\nmin_value = min(values);\nmax_value = max(values);\n\nf[]@range;\n\n@range[0] = min_value;\n@range[1] = max_value;"
+}

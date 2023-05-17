@@ -1,0 +1,5 @@
+{
+    "label": "Gravity_on_Curves_(Hanging_Cables)",
+    "context": "Points",
+    "data": "float stiffness = clamp(chf(\"stiffness\"), 0, 0.99);\nfloat u = @curveu * (1 - @curveu) * 4;\nu = pow( 1 - u, (1 / (1 - stiffness)));\n\n@P.y *= clamp(fit01(gradient, (1 - ch(\"gravity\")), 1), 0, 1);"
+}

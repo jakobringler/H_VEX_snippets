@@ -1,0 +1,5 @@
+{
+    "label": "Expand_Group_Over_Geo",
+    "context": "Points",
+    "data": "int pc = pcopen(0, \\'P\\', @P, chf(\\'radius\\'), chi(\\'maxpts\\'));\n\nwhile (pciterate(pc) > 0)\n{\n\tint currentpt;\t\n\tpcimport(pc, \\'point.number\\', currentpt);\n\tsetpointgroup(0, \\'group1\\', currentpt, 1);\n}"
+}

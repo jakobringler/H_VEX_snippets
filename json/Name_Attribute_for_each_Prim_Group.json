@@ -1,0 +1,5 @@
+{
+    "label": "Name_Attribute_for_each_Prim_Group",
+    "context": "Points",
+    "data": "string grps[] = detailintrinsic(0, \\'primitivegroups\\');\nforeach(string g; grps)\n{\n\taddprimattrib(0, g, 123);\n}"
+}

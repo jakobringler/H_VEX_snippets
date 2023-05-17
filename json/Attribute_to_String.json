@@ -1,0 +1,5 @@
+{
+    "label": "Attribute_to_String",
+    "context": "Points",
+    "data": "s@name = \"piece_\" + itoa(i@class);"
+}

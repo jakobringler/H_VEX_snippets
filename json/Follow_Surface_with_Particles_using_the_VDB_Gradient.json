@@ -1,0 +1,5 @@
+{
+    "label": "Follow_Surface_with_Particles_using_the_VDB_Gradient",
+    "context": "Points",
+    "data": "float surf = volumesample(1, \"surface\", v@P);\nvector grad = volumegradient(1, \"surface\", v@P);\n\nv@P -= normalize(grad) * surf;"
+}

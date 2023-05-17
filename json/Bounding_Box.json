@@ -1,0 +1,5 @@
+{
+    "label": "Bounding_Box",
+    "context": "Points",
+    "data": "vector bbox = getbbox_size(0);\nvector bbox_max = getbbox_max(0);\nvector bbox_min = getbbox_min(0);\nvector bbox_center = getbbox_center(0);\n  \nfloat xsize = getbbox_size(0).x;\nfloat y_max = getbbox_max(0).y;\nfloat z_min = getbbox_min(0).z;"
+}

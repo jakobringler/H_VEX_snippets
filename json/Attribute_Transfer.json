@@ -1,0 +1,5 @@
+{
+    "label": "Attribute_Transfer",
+    "context": "Points",
+    "data": "int posprim;\nvector param_uv;\nfloat maxdist = 10;\nfloat dist = xyzdist(1,@P,posprim,param_uv,maxdist);\nvector pos = primuv(1,\"rest\",posprim,param_uv);\nv@rest = pos;"
+}

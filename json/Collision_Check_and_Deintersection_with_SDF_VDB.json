@@ -1,0 +1,5 @@
+{
+    "label": "Collision_Check_and_Deintersection_with_SDF_VDB",
+    "context": "Points",
+    "data": "vector gradient = volumegradient(1, \"surface\", v@P); \nfloat surface = volumesample(1, \"surface\", v@P);\n\nif(surface < chf(\"dist\"))\n{\n\tv@P += normalize(gradient) * abs(surface);\n}"
+}

@@ -1,0 +1,5 @@
+{
+    "label": "Flow_Vector_around_Geometry",
+    "context": "Points",
+    "data": " vector up = chv(\"up\"); // usually 0, 1, 0 for Y  \n vector norm = normalize(v@N);  \n vector c1 = cross(norm, up);  \n vector c2 = cross(norm, c1);  \n v@revolve = c1;\n v@flow = c2;"
+}

@@ -1,0 +1,5 @@
+{
+    "label": "Edgefalloff",
+    "context": "Points",
+    "data": "if (@edgefalloff==1)\n{\n\tint near[] = nearpoints(0,@P,chf(\"dist\"));\n\t\n\tforeach (int pnt;near)\n\t{\n\t\tvector pntP = point(0,\"P\",pnt);\n\t\tfloat dist = fit(distance(pntP,@P),0,chf(\"dist\")*2,1,-1);\n\t\tsetpointattrib(0,\"edgefalloff\",pnt,dist,\"set\");\n\t}\n}"
+}

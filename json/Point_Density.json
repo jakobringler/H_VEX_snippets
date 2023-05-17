@@ -1,0 +1,5 @@
+{
+    "label": "Point_Density",
+    "context": "Points",
+    "data": " \nfloat maxdist = chf(\"maxdist\");  \nint maxpts = chi(\"maxpts\");  \nint points = len(nearpoints(0, @P, maxdist, maxpts));  \n  \nf@density = float(points) / maxpts;"
+}

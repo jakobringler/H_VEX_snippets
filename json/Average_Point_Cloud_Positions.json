@@ -1,0 +1,5 @@
+{
+    "label": "Average_Point_Cloud_Positions",
+    "context": "Points",
+    "data": "vector value;\nvector values[];\n\nfor (int i=0; i<@numpt; i++)\n{\n\tvalue = point(geoself(), \"P\", i);\n\tappend(values,value);\n}\n  \nvector avgP = avg(values);\n\nif(@ptnum>0)\n{\n\tremovepoint(geoself(), @ptnum);\n} \n\n@P = avgP;"
+}

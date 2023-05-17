@@ -1,0 +1,5 @@
+{
+    "label": "Normalize_@age",
+    "context": "Points",
+    "data": "@normage = @age / @life;"
+}

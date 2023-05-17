@@ -1,0 +1,5 @@
+{
+    "label": "Camera_Position_and_Direction",
+    "context": "Points",
+    "data": "string cam = chs(\"cam\");\nmatrix camXform = optransform(cam); \nvector cpos;\nvector cdir;\nvector cup;\n\ncpos = cracktransform(0, 0, 0, {0,0,0}, camXform);\ncdir = vtransform(cam,\"space:world\", {0,0,-1});\ncup = vtransform(cam,\"space:world\", {0,1,0});\n\nv@P = cpos;\nv@N = cdir;\nv@up = cup;"
+}

@@ -1,0 +1,5 @@
+{
+    "label": "Remove_Point_Percentage",
+    "context": "Points",
+    "data": "float half_cone_rad = radians(chf(\"half_cone\"));\n\nif(acos(dot(@P, {0,0,1})) <= half_cone_rad)\n{\n\tremovepoint(0, @ptnum);\n}"
+}

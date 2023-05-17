@@ -1,0 +1,5 @@
+{
+    "label": "Bias_and_Gain",
+    "context": "Points",
+    "data": "function float bias(float val; float bias) \n{\n    return (val / ((((1.0/bias) - 2.0)*(1.0 - val))+1.0));\n}\n\nfunction float gain(float val; float gain) \n{\n    if(val < 0.5)\n    {\n        return bias(val * 2.0,gain)/2.0;\n    }\n    else\n    {\n        return bias(val * 2.0 - 1.0,1.0 - gain)/2.0 + 0.5;\n    }\n}\n\nfloat val = pow(val, exp); "
+}

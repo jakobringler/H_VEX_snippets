@@ -1,0 +1,5 @@
+{
+    "label": "Vector_Flow_on_Objects",
+    "context": "Points",
+    "data": "int handle = pcopen(0, \"P\", @P, chf(\"radius\"), chi(\"maxpoints\"));\nv@P = pcfilter(handle, \"P\");"
+}

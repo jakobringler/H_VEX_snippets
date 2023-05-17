@@ -1,0 +1,5 @@
+{
+    "label": "Rotate_Vector",
+    "context": "Points",
+    "data": "if (haspointattrib(0, \"id\"))\n{    \n    if (rand(@id+chi(\\'seed\\')+0.33)<chf(\\'percentage\\'))\n    {\n        removepoint(geoself(), @ptnum);\n    }    \n}\nelse\n    if (  rand(@ptnum+chi(\\'seed\\')+0.33)<chf(\\'percentage\\')) \n    {\n        removepoint(geoself(), @ptnum);\n    }"
+}

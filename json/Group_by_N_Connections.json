@@ -1,0 +1,5 @@
+{
+    "label": "Group_by_N_Connections",
+    "context": "Points",
+    "data": "int n = chi(\"Neighbours\");\n\nif (neighbourcount (0, @ptnum) > n)\n{\n\tsetpointgroup (0, \"grouped\", @ptnum, 1);\n}"
+}

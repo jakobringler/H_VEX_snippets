@@ -1,0 +1,5 @@
+{
+    "label": "Sharpen_Point_Cloud",
+    "context": "Points",
+    "data": "float angle = chf(\"angle\");\nvector axis = normalize(chv(\"axis\"));\n\nvector4 rot = quaternion(radians(angle), axis);\n@P = qrotate(rot, @P);"
+}

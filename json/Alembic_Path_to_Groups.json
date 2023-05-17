@@ -1,0 +1,5 @@
+{
+    "label": "Alembic_Path_to_Groups",
+    "context": "Primitives",
+    "data": "string name[] = split(s@path, \"/\");\n\nforeach (string s; name){\n    setprimgroup(0, s, @primnum, 1, \"set\");\n} "
+}

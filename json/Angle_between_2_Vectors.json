@@ -1,0 +1,5 @@
+{
+    "label": "Angle_between_2_Vectors",
+    "context": "Points",
+    "data": "float angle = degrees(acos(dot(normalize(vector1), normalize(vector2))));"
+}

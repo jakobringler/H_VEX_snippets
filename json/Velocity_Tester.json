@@ -1,0 +1,5 @@
+{
+    "label": "Velocity_Tester",
+    "context": "Points",
+    "data": "vector pos = v@P * chf(\"scale\");\nvector dir = curlnoise2d(pos + @Time * chf(\"time\"));\nmatrix3 mat = dihedral(set(0,0,1), v@N);\ndir *= mat;\n\nv@v = dir;"
+}

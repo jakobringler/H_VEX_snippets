@@ -1,0 +1,5 @@
+{
+    "label": "Extract_Tranformation_Matrix",
+    "context": "Points",
+    "data": "vector P1 = point(0, \"P\", 0);\nvector P2 = point(0, \"P\", 1);\nvector up = {0,1,0};\n\nvector X = normalize(P2-P1);\nvector Z = normalize(cross(up, X));\nvector Y = normalize(cross(X, Z));\n\nvector P = P1 + (P2 - P1) / 2;\n\nmatrix transform = set(X, Y, Z, P);\n\nsetcomp(transform, 0, 0, 3); \nsetcomp(transform, 0, 1, 3);\nsetcomp(transform, 0, 2, 3); \n\n4@transform = transform;"
+}
